@@ -26,7 +26,7 @@ define( 'DB_NAME', 'alainkas_wp194');
 define( 'DB_USER', 'alainkas_wp194');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '(Ss72kP1(H');
+define( 'DB_PASSWORD', 'f432fesWER@##DSdsa');
 
 /** MySQL hostname */
 define( 'DB_HOST', 'wordpress_db');
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'ebcd123794a5e4c0488d5d82b421481e4a11247e');
-define( 'SECURE_AUTH_KEY',  '53c1808ee17cda0da9af07e391906b1cc3d4676c');
-define( 'LOGGED_IN_KEY',    '8a28c5ce9843ee4cd6b3f282cdaae51d36a9f30b');
-define( 'NONCE_KEY',        '1a00c7cd16f7cd889c255b5c3cf464aece58c1f4');
-define( 'AUTH_SALT',        '1a17562c591b41f23f15e29dd49dd9d4cb78116f');
-define( 'SECURE_AUTH_SALT', '1e92b12d6d313b30b6557a6eaa4d58727e2e8fe2');
-define( 'LOGGED_IN_SALT',   'e99704e97a3432d1bf66bd4bbdceb6872aea9582');
-define( 'NONCE_SALT',       '388201c0430dce173dc6f15f6b50dfbc2e304645');
+define( 'AUTH_KEY',         '67680c3d228a45b833142d7593321b716fbb9880');
+define( 'SECURE_AUTH_KEY',  '7fd5f886f445670a8c3778e1adf3e9a3313a5d0d');
+define( 'LOGGED_IN_KEY',    '49bbdd860a81304c0f006e902c2479fcbdf4c7c7');
+define( 'NONCE_KEY',        '840d652cb74e5a1769fe09aac17cfb987db91bbb');
+define( 'AUTH_SALT',        '6c5cd392257a69d741c54f30642eb4500c374248');
+define( 'SECURE_AUTH_SALT', '6d45f573e97922ddff2d9cfe00250c960eb40221');
+define( 'LOGGED_IN_SALT',   '0ca70e5cebbbce18cc3e5af541c85c908f1ddf8d');
+define( 'NONCE_SALT',       'a92de9db1c399388866c6d4c47f1d9ae12b9d28e');
 
 /**#@-*/
 
