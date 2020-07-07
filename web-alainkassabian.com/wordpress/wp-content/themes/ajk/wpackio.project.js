@@ -20,7 +20,7 @@ module.exports = {
   files: [
     // If this has length === 1, then single compiler
     {
-      name: "app",
+      name: "ajk-theme-wpack",
       entry: {
         // 		// mention each non-interdependent files as entry points
         //      // The keys of the object will be used to generate filenames

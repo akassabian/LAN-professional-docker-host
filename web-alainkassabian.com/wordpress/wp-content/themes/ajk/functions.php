@@ -3,8 +3,20 @@
 // Require the composer autoload for getting conflict-free access to enqueue
 require_once __DIR__ . '/vendor/autoload.php';
 
+function __construct(){
 // Instantiate
-$enqueue = new \WPackio\Enqueue( 'appName', 'outputPath', '1.0.0', 'plugin', __FILE__ );
+$enqueue = new \WPackio\Enqueue( 'ajk-theme-wpack', 'dist', '1.0.0', 'theme', FALSE );
+
+$assets = $enqueue->enqueue( 'ajk-theme-wpack', 'main', [
+	'js' => true,
+	'css' => true,
+	'js_dep' => [],
+	'css_dep' => [],
+	'in_footer' => true,
+	'media' => 'all',
+] );
+}
+add_action('wp_enqueue_scripts', '__construct');
 
 function alaink_scripts()
 {

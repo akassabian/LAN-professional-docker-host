@@ -13,6 +13,8 @@
     "archive": "wpackio-scripts pack"
   },
   "dependencies": {
-    "@wpackio/entrypoint": "^4.4.1"
+    "@wpackio/entrypoint": "^4.4.1",
+    "react": "^16.13.1",
+    "react-hot-loader": "^4.12.21"
   }
 }
