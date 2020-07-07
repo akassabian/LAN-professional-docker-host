@@ -1,5 +1,11 @@
 <?php
 
+// Require the composer autoload for getting conflict-free access to enqueue
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Instantiate
+$enqueue = new \WPackio\Enqueue( 'appName', 'outputPath', '1.0.0', 'plugin', __FILE__ );
+
 function alaink_scripts()
 {
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
