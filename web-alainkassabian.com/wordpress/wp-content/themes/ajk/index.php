@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 	
-	<div id="container content-main">
+	<div class="container content-main">
 
 					<div class="row">						
                         <div class="col-3">
-						   <img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic.jpg" width="100px" height="100px">
+						   <img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic.jpg" width="150px" height="150px">
 						</div>
 						<div class="col-9">
 						<p>Hello! My name is Alain.</p>

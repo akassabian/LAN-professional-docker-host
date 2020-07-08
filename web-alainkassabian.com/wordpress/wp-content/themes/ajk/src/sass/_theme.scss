@@ -2,12 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "gleegoo";
-    background-color: #262626;
-    color: white;
+    color: white!important;
+    background-color: #0e0e0e!important;
 }
 
-.navbar-header{
-    background-color: #262626;
+nav{
     border-bottom: 2px solid #7952B3;
 }
 
@@ -26,11 +25,18 @@ nav.navbar {
 
     ul.navbar-right {
         li {
+            a{
+                color: white;
+            }
             a::before {
                 display: none;
             }
         }
     }
+}
+
+.content-main{
+
 }
 
 .display_pic{

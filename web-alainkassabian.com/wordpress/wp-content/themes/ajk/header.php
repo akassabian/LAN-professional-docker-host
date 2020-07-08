@@ -16,32 +16,19 @@
 <script>
 
    </script>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic.jpg" width="50px" height="50px">
+
+<nav class="navbar navbar-expand-lg border-bottom border-dark">
+<a class="d-flex navbar-brand" href="<?php echo home_url(); ?>">
+      <img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic.jpg" width="50px" height="50px">
                       <div><span>ajk<br>development</span></div>
-                   </a>
-                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <!-- Bootstrap Example Links -->
-                        <!--
-                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
-                        -->
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                                            <?php wp_nav_menu(array(
+                    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navbar-nav navbar-right">
+        <?php wp_nav_menu(array(
                                             'menu'              => 'header-menu',
                                             'theme_location'    => 'Header',
                                             'depth'             => 2,
@@ -50,9 +37,6 @@
                                             'menu_class'        => 'nav navbar-nav navbar-right',
                                             'walker'            => new wp_bootstrap_navwalker(),
                                             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback'));?>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
+    </ul>
+  </div>
+</nav>
