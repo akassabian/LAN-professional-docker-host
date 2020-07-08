@@ -1,23 +1,5 @@
 <?php
 
-// Require the composer autoload for getting conflict-free access to enqueue
-require_once __DIR__ . '/vendor/autoload.php';
-
-function __construct(){
-// Instantiate
-$enqueue = new \WPackio\Enqueue( 'ajk-theme-wpack', 'dist', '1.0.0', 'theme', FALSE );
-
-$assets = $enqueue->enqueue( 'ajk-theme-wpack', 'main', [
-	'js' => true,
-	'css' => true,
-	'js_dep' => [],
-	'css_dep' => [],
-	'in_footer' => true,
-	'media' => 'all',
-] );
-}
-add_action('wp_enqueue_scripts', '__construct');
-
 function alaink_scripts()
 {
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
