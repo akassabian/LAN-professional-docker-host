@@ -20,15 +20,15 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                      <?php bloginfo('name'); ?>
+                   </a>
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                      <?php bloginfo('name'); ?>
-                   </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,20 +55,3 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-
-        <!-- Slider Wrapper -->
-        <div id="slider-wrapper">
-            <div id="slider-1" class="rev_slider" data-version="5.0">
-                <ul>
-                    <li data-transition="fade">
-                        <!-- MAIN IMAGE -->
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/01.jpg" width="100%" height="100%">
-                    </li>
-                    <li data-transition="fade">
-                        <!-- MAIN IMAGE -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/02.jpg" width="100%" height="100%">
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- / Slider Wrapper -->

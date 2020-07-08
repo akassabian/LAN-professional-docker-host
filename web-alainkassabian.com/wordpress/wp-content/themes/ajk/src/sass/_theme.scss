@@ -4,6 +4,10 @@ body {
     font-family: "gleegoo";
 }
 
+#display_pic{
+    border-radius: 50%;
+}
+
 #slider-wrapper {
     width: 100vw;
     height: 100vh;
@@ -37,6 +41,10 @@ nav.navbar {
     color: purple;
     display: inline-block;
     font-size: 130%;
+}
+
+.navbar-brand{
+    background-color:black;
 }
 
 #content-main {
