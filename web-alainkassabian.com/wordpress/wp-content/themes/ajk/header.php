@@ -21,7 +21,8 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                      <?php bloginfo('name'); ?>
+                    <img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic.jpg" width="50px" height="50px">
+                      <div><span>ajk<br>development</span></div>
                    </a>
                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>

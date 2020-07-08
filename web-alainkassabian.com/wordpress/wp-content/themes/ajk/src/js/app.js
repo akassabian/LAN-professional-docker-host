@@ -11,7 +11,7 @@ import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 
-//require('bootstrap');
+require('bootstrap');
 //require('jquery-serializeobject');
 
 //window.validate = require("jquery-validation");
