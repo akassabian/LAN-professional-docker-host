@@ -1,83 +1,95 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "gleegoo";
-    color: white!important;
+  margin: 0;
+  padding: 0;
+  font-family: "gleegoo";
+  color: white !important;
 }
 
-nav{
-    background-color: #0e0e0e;
+nav {
+  background-color: #0e0e0e;
 }
 
-.navbar-brand{
-    color: white;
-    text-decoration: none;
-    display: flex;
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  display: flex;
 
-    .display_pic{
-        border: 2px solid white;
-    }
+  .display_pic {
+    border: 2px solid white;
+  }
 }
 
 nav.navbar {
-    z-index: 1;
+  z-index: 1;
 
-    ul.navbar-right {
-        li {
-            a{
-                color: white;
-            }
-            a::before {
-                display: none;
-            }
-        }
+  ul.navbar-right {
+    li {
+      a {
+        color: white;
+      }
+      a::before {
+        display: none;
+      }
     }
+  }
+}
+
+.bg-ajk-dark {
+  background-color: #0e0e0e;
+}
+
+.row-topics {
+  background-color: #0e0e0e;
+
+  margin-bottom: 0;
+
+  .col-6, .col-3{
+    justify-content: center;    
+  }
+
+  .topics-container {
+    border: 1px solid #262626;
+    border-radius: 25px;
+    width: 100%;
+    span{
+      display: none;
+    }
+  }
+  img{
+    width: 90%;
+  }
 }
 
 .row-bio{
-    background-color: #0e0e0e;
+  margin: 0 0 50px;
+  border-bottom: 1px solid #262626;
+  padding: 50px 0;
 }
 
-.row-topics{
-    background-color: #0e0e0e;
-
-    margin-bottom: 0;
-
-    li{
-        height: 75px;
-    }
+.display_pic {
+  border-radius: 50%;
 }
 
-
-
-.content-main{
-
+.bio_pic_col {
+  justify-content: flex-end;
 }
 
-.display_pic{
-    border-radius: 50%;
+.ajk-button {
+  color: white;
+  padding: 20px;
+  border: 3px solid white;
+  transition-duration: 2s;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.bio_pic_col{
-    justify-content: flex-end;
+.ajk-button:hover {
+  background-color: white;
+  color: #0e0e0e !important;
+  text-decoration: none;
 }
 
-.ajk-button{
-    color: white;
-    padding: 20px;
-    border: 3px solid white;
-    transition-duration: 2s;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.ajk-button:hover{
-    background-color: white;
-    color: #0e0e0e!important;
-    text-decoration: none;
-}
-
-.row-cta{
-    // background-image: url(https://alainkassabian.com/wp-content/themes/ajk/images/01.jpg);
-    background-color: #ff9285;
+.bg-ajk-primary {
+  // background-image: url(https://alainkassabian.com/wp-content/themes/ajk/images/01.jpg);
+  background-color: #ff9285!important;
 }
