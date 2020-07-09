@@ -40,23 +40,35 @@ nav.navbar {
 
 .row-topics {
   background-color: #0e0e0e;
-
   margin-bottom: 0;
-
+  list-style: none;
   .col-6, .col-3{
     justify-content: center;    
   }
 
   .topics-container {
+    position: relative;
     border: 1px solid #262626;
     border-radius: 25px;
-    width: 100%;
-    span{
-      display: none;
-    }
+    width: 100%;    
   }
+
   img{
     width: 90%;
+  }
+
+  .topics-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    background-color: black;
+    opacity: 0;
+    top: 0;
+    border-radius: 25px;
+  }
+  .topics-container:hover .topics-overlay{
+    opacity: 0.9;    
   }
 }
 

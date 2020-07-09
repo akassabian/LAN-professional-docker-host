@@ -18,9 +18,10 @@
 		<div class="container">
 			<ul class="row row-topics">
 				<li class="col-6 d-flex">
-					<div class="topics-container">
+					<div class="topics-container">						
 						<img src="<?php echo get_template_directory_uri(); ?>/images/web-resume.svg">
 						<span>Web Resume</span>
+						<div class="topics-overlay"></div>
 					</div>
 				</li>
 				<li class="col-6 d-flex">
