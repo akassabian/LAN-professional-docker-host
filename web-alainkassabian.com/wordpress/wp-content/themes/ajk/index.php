@@ -17,25 +17,33 @@
 	
 		<div class="container">
 			<ul class="row row-topics">
-				<li class="col-6 d-flex">
-					<div class="topics-container">						
-						<img src="<?php echo get_template_directory_uri(); ?>/images/web-resume.svg">
-						<span>Web Resume</span>
-						<div class="topics-overlay"></div>
-					</div>
+				<li class="col-6 d-flex justify-content-center flex-wrap">
+					<a href="#" class="topics-container">						
+						<img src="<?php echo get_template_directory_uri(); ?>/images/web-resume.svg">						
+						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
+							<span>View Resume</span>
+						</div>
+					</a>
+					<p>Web</p>
 				</li>
-				<li class="col-6 d-flex">
-					<div class="topics-container">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/tech.svg">
-						<span>Technology</span>
-					</div>
+				<li class="col-6 d-flex justify-content-center flex-wrap">
+					<a href="#" class="topics-container">						
+						<img src="<?php echo get_template_directory_uri(); ?>/images/tech.svg">						
+						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
+							<span>View Blog</span>
+						</div>
+					</a>
+					<p>Technology</p>
 				</li>
 				<li class="col-3"></li>
-				<li class="col-6 d-flex">
-					<div class="topics-container">
+				<li class="col-6 d-flex justify-content-center flex-wrap">
+					<a href="#" class="topics-container">						
 						<img src="<?php echo get_template_directory_uri(); ?>/images/health.svg">						
-						<span>Health</span>
-					</div>
+						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
+							<span>View Blog</span>
+						</div>
+					</a>
+					<p>Health</p>
 				</li>
 				<li class="col-3"></li>
 			</ul>
