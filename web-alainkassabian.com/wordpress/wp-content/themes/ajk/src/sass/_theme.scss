@@ -10,11 +10,14 @@ body {
 }
 
 nav {
-  background-color: #0e0e0e;
+  background-color: #000066;
+
+  h1, a{
+    color: #f3f3f3;
+  }
 }
 
 .navbar-brand {
-  color: white;
   text-decoration: none;
   display: flex;
 
@@ -29,7 +32,7 @@ nav.navbar {
   ul.navbar-right {
     li {
       a {
-        color: white;
+
       }
       a::before {
         display: none;
@@ -44,10 +47,14 @@ nav.navbar {
 
 .bg-ajk-primary {
   // background-image: url(https://alainkassabian.com/wp-content/themes/ajk/images/01.jpg);
-  background-color: #ff9285!important;
+  background-color: #000066!important;
 }
 
 ///FOOTER
+footer{
+  background: #f3f3f3;
+}
+
 .social-icons{
   margin-top: 30px;
   ul{
@@ -77,7 +84,7 @@ nav.navbar {
 /////////////
 .row-bio{
   margin: 0 0 50px;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid #000066;
   padding: 50px 0;
 }
 
@@ -134,6 +141,7 @@ nav.navbar {
 .row-cta{
   padding: 40px 0;
 }
+
 .ajk-button {
   color: white;
   padding: 20px;

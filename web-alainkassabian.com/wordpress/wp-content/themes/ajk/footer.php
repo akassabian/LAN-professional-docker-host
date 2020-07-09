@@ -2,7 +2,7 @@
 
 
 
-		<footer class="bg-white">
+		<footer>
 		<div class="container d-flex flex-column">
 			<div class="row social-icons">
 				<div class="col d-flex justify-content-center">

@@ -19,8 +19,8 @@
 
 <nav class="navbar navbar-expand-lg border-bottom border-dark">
 <a class="d-flex navbar-brand" href="<?php echo home_url(); ?>">
-      <img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic.jpg" width="50px" height="50px">
-                      <div><span>ajk<br>development</span></div>
+
+                      <div><h1>ajk</h1></div>
                     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
