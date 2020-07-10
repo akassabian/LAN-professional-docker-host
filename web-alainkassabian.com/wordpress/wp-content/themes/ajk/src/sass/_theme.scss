@@ -16,6 +16,12 @@ nav {
   h1, a{
     color: #000066;
   }
+  .navbar-toggler{
+    border-color: #000066;
+  }
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,102)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 }
 
 .navbar-brand {
@@ -32,9 +38,6 @@ nav.navbar {
 
   ul.navbar-right {
     li {
-      a {
-
-      }
       a::before {
         display: none;
       }
@@ -84,8 +87,11 @@ footer{
 //HOME
 /////////////
 .row-bio{
-  margin: 0 0 50px;
+  margin: 0;
   padding: 160px 0 0;
+  .bio_pic_col{
+    margin-bottom: 60px;
+  }
 }
 
 .row-bio-2{
@@ -99,14 +105,16 @@ footer{
   border: 3px solid #f7f7f7;
 }
 
-.bio_pic_col {
-  justify-content: flex-end;
-}
-
 .row-topics {
   background-color: #0e0e0e;
   margin-bottom: 0;
   list-style: none;
+  padding: 0;
+
+  li{
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
 
   .topics-container {
     position: relative;
@@ -139,10 +147,6 @@ footer{
   .topics-container:hover .topics-overlay{
     opacity: 0.9;    
   }
-  .col-6{
-    padding: 0 20px;
-    margin-bottom: 20px;
-  }
 }
 
 .row-cta{
@@ -162,4 +166,13 @@ footer{
   background-color: white;
   color: #0e0e0e !important;
   text-decoration: none;
+}
+@media (min-width: 768px){
+  .row-bio{
+    margin: 0 0 50px;
+    padding: 160px 0 0;
+    .bio_pic_col{
+      margin: 0;
+    }
+  }
 }

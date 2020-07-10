@@ -3,11 +3,11 @@
 	<div class="bg-ajk-dark">	
 		<div class="container content-main">
 			<div class="row row-bio">						
-				<div class="col-6 d-flex bio_pic_col">
+				<div class="col-xs-12 col-md-6 d-flex bio_pic_col justify-content-center justify-content-lg-end">
 					<img class="display_pic" src="<?php echo get_template_directory_uri(); ?>/images/display_pic_cropped.jpg" width="250px" height="250px">
 				</div>
-				<div class="col-6 d-flex flex-column justify-content-center">
-					<p>
+				<div class="col-xs-12 col-md-6 d-flex flex-column justify-content-center">
+					<p class="text-center text-md-left">
 						Hello! My name is Alain.
 						<br>
 						I am a Mississauga based web developer.
@@ -15,7 +15,7 @@
 				</div>
 			</div>
 			<div class="row row-bio-2">
-				<div class="col">
+				<div class="col text-justify text-md-left">
 					<p>I grew up in Whitby, Ontario. I'm an autodidactic polymath (self taught on broad range of topics) that gravitates towards technology, art, health, and social systems. I began developing websites professionaly near the end of 2018.</p>
 				</div>
 			</div>
@@ -23,8 +23,8 @@
 
 	
 		<div class="container">
-			<ul class="row row-topics">
-				<li class="col-6 d-flex justify-content-center flex-wrap">
+			<ul class="row row-topics justify-content-center">
+				<li class="col-12 col-md-6 d-flex justify-content-center flex-wrap">
 					<a href="#" class="topics-container">						
 						<img src="<?php echo get_template_directory_uri(); ?>/images/web-resume.svg">						
 						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
@@ -33,7 +33,7 @@
 					</a>
 					<p>Web</p>
 				</li>
-				<li class="col-6 d-flex justify-content-center flex-wrap">
+				<li class="col-12 col-md-6 d-flex justify-content-center flex-wrap">
 					<a href="#" class="topics-container">						
 						<img src="<?php echo get_template_directory_uri(); ?>/images/tech.svg">						
 						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
@@ -42,8 +42,7 @@
 					</a>
 					<p>Technology</p>
 				</li>
-				<li class="col-3"></li>
-				<li class="col-6 d-flex justify-content-center flex-wrap">
+				<li class="col-12 col-md-6 d-flex justify-content-center flex-wrap">
 					<a href="#" class="topics-container">						
 						<img src="<?php echo get_template_directory_uri(); ?>/images/health.svg">						
 						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
@@ -52,7 +51,6 @@
 					</a>
 					<p>Health</p>
 				</li>
-				<li class="col-3"></li>
 			</ul>
 		</div>
 	</div>
@@ -61,7 +59,7 @@
 		<div class="container">
 			<div class="row row-cta">
 				<div class="col text-center">
-					<h2>Need help on a project?</h2><a href="#" class="ajk-button" style=>Free Consultation</a>
+					<h2>Need help on a project?</h2><a href="mailto:alainkassabian@gmail.com" class="ajk-button" style=>Free Consultation</a>
 				</div>
 			</div>
 		</div>
