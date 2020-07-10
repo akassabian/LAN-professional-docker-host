@@ -17,7 +17,7 @@
 
    </script>
 
-<nav class="navbar navbar-expand-lg border-bottom border-dark">
+<nav class="navbar navbar-expand-lg fixed-top">
 <a class="d-flex navbar-brand" href="<?php echo home_url(); ?>">
 
                       <div><h1>ajk</h1></div>
