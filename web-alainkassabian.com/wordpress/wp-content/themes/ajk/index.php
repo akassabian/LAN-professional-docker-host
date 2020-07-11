@@ -8,7 +8,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6 d-flex flex-column justify-content-center">
 					<p class="text-center text-md-left">
-						Hello! My name is Alain.
+						Hello! My name is Alain (AJ).
 						<br>
 						I am a Mississauga based web developer.
 					</p>
@@ -22,10 +22,10 @@
 		</div>
 
 	
-		<div class="container">
+		<div class="container topics">
 			<ul class="row row-topics justify-content-center">
 				<li class="col-12 col-md-6 d-flex justify-content-center flex-wrap">
-					<a href="#" class="topics-container">						
+					<a href="https://registry.jsonresume.org/akassabian" class="topics-container">						
 						<img src="<?php echo get_template_directory_uri(); ?>/images/web-resume.svg">						
 						<div class="topics-overlay text-center d-flex flex-column justify-content-center">
 							<span>View Resume</span>
