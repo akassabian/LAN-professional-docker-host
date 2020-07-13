@@ -35,7 +35,7 @@
                                             'menu'              => 'header-menu',
                                             'theme_location'    => 'Header',
                                             'depth'             => 2,
-                                            'container'         => 'div',
+                                            'container'         => false,
                                             'container_class'   => 'navbar-collapse',
                                             'menu_class'        => 'nav navbar-nav navbar-right',
                                             'walker'            => new wp_bootstrap_navwalker(),
