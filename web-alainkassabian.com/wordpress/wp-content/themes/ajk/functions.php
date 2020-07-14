@@ -1,23 +1,24 @@
 <?php
 
+//Load production scripts and styles
 function alaink_production_scripts()
 {  
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/public/css/app.css', array(), '1.0.0', 'all');
     wp_enqueue_script('customjs', get_template_directory_uri() . '/public/js/app.js', array(), '1.0.0', true);
-
 }
 
 if ( "akcom.test" !== $_SERVER['SERVER_NAME'] ) {
-add_action('wp_enqueue_scripts', 'alaink_production_scripts');
+  add_action('wp_enqueue_scripts', 'alaink_production_scripts');
 }
 
+//Load local dev scripts and styles
 function alaink_local_dev_scripts()
 {  
-    wp_enqueue_script('customjs', get_template_directory_uri() . '/public/js/app.js', array(), '1.0.0', true);
+  wp_enqueue_script('customjs', get_template_directory_uri() . '/public/js/app.js', array(), '1.0.0', true);
 }
-
+  
 if ( "akcom.test" === $_SERVER['SERVER_NAME'] ) {
-add_action('wp_enqueue_scripts', 'alaink_local_dev_scripts');
+  add_action('wp_enqueue_scripts', 'alaink_local_dev_scripts');
 }
 
 function ak_menus()
@@ -44,6 +45,27 @@ function bootstrap_nav()
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker()));
 }
+
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+// Remove wp-embed.min.js
+function dequeue_scripts() {
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_enqueue_scripts', 'dequeue_scripts' );
+
+// Register theme support for HTML scipt and style so that type attribute is ommitted for W3 standards/validator
+add_action(
+  'after_setup_theme',
+  function() {
+      add_theme_support( 'html5', [ 'script', 'style' ] );
+  }
+);
 
 /*
 —------------------------------------------------------------
