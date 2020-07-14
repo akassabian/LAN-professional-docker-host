@@ -19,7 +19,7 @@
                         }*/
                     ?>                    
                     <?php
-                    $category_id = get_the_category(get_queried_object()->ID)->cat_ID;
+                    $category_id = get_the_category(get_queried_object()->ID)[0]->term_id;
                     $args = array( 'category' => $category_id, 'post_type' =>  'post', 'posts_per_page' => -1, 'post_status' => 'publish' );
                     $postslist = get_posts($args);
                     foreach ($postslist as $post) :
