@@ -266,21 +266,22 @@ footer {
         color: #007bff;
       }
     }
-  }
-  footer{
-    margin-top: 20px;
-    background-color: #0e0e0e;
-    border-top: 5px solid #f7f7f7;
-    .social-icons ul{
-      border-color: #f7f7f7;
-      svg path{
-        fill: #f7f7f7;
+    footer{
+      margin-top: 20px;
+      background-color: #0e0e0e;
+      border-top: 5px solid #f7f7f7;
+      .social-icons ul{
+        border-color: #f7f7f7;
+        svg path{
+          fill: #f7f7f7;
+        }
+      }
+      p{
+        color: #f7f7f7;
       }
     }
-    p{
-      color: #f7f7f7;
-    }
   }
+
 
 //////////////
 // SINGLE BLOGS
