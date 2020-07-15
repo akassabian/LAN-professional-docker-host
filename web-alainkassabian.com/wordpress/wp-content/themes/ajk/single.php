@@ -9,10 +9,10 @@
                     $args = array( 'category' => $category_id, 'post_type' =>  'post', 'posts_per_page' => -1, 'post_status' => 'publish' );
                     $postslist = get_posts($args);?>
                     <ul>
-                        <li><h2><strong><?php echo get_the_category(get_queried_object()->ID)[0]->name?></strong></h2></li>
+                        <li><h2><strong><a href="<?php echo get_site_url().'/category/'.get_the_category(get_queried_object()->ID)[0]->slug?>"><?php echo get_the_category(get_queried_object()->ID)[0]->name?></a></strong></h2></li>
                         <?php foreach ($postslist as $post) :
                             setup_postdata($post); ?>
-                            <li><a class="post-title"  href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                            <li><a class="post-title-side"  href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

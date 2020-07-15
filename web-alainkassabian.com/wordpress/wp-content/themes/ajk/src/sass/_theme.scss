@@ -232,10 +232,12 @@ footer {
 .single-post, .category{
   .content-main{
     margin-top: 32px;
+    overflow: hidden;
   }
   .similar-blogs{
     ul{
       list-style: none;
+      padding-left: 0;
       li{
         margin-bottom: 20px;
       }
@@ -256,6 +258,14 @@ footer {
     h2:first-of-type{
       margin-top: 0;
     }
+    .post-title-main{
+      color: #f7f7f7;
+      text-decoration: none;        
+    }
+    .post-title-main:hover{
+        color: #007bff;
+      }
+    }
   }
   footer{
     margin-top: 20px;
@@ -269,6 +279,25 @@ footer {
     }
     p{
       color: #f7f7f7;
+    }
+  }
+
+//////////////
+// SINGLE BLOGS
+/////////////
+.single-post{
+  .similar-blogs{
+    order:2;
+  }
+  .blog-content{
+    order:1
+  }
+  @media (min-width:768px){
+    .similar-blogs{
+      order:1;
+    }
+    .blog-content{
+      order:2;
     }
   }
 }
