@@ -9,17 +9,18 @@
                     $args = array( 'category' => $category_id, 'post_type' =>  'post', 'posts_per_page' => -1, 'post_status' => 'publish' );
                     $postslist = get_posts($args);?>
                     <ul>
+                        <li><h2><strong><?php echo get_queried_object()->name;?></strong></h2></li>
                         <?php foreach ($postslist as $post) :
                             setup_postdata($post); ?>
                             <li><a class="post-title"  href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
-                <div class="col-12 col-md-9">
+                <div class="col-12 col-md-9 blog-content">
                     <?php if (have_posts()) : ?>
                         <?php while (have_posts()) :
                             the_post(); ?>
-                            <h1><?php the_title(); ?></h1>
+                            <h2><strong><?php the_title(); ?></strong></h2>
                             <?php the_content(); ?>
                         <?php endwhile; ?>
                     <?php endif; ?>

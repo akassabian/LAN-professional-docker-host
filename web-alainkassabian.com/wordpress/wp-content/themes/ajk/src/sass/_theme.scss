@@ -230,6 +230,9 @@ footer {
 // CATEGORY & SINGLE BLOGS
 /////////////
 .single-post, .category{
+  .content-main{
+    margin-top: 32px;
+  }
   .similar-blogs{
     ul{
       list-style: none;
@@ -243,6 +246,15 @@ footer {
       a:hover{
         color: #007bff;
       }
+    }
+  }
+  .blog-content{
+    h2{
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    h2:first-of-type{
+      margin-top: 0;
     }
   }
   footer{
